@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->execute([$username, $display_name]);
 
             // Redirect to scoreboard with success message
-            header('Location: index.php?success=Participant added successfully');
+            header('Location: ../index.php?success=Participant added successfully');
             exit;
         } catch(PDOException $e) {
             $errors['db'] = 'Database error: ' . $e->getMessage();
@@ -59,10 +59,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">SmartScores</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="index.php">SmartScores</a>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">

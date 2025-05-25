@@ -32,7 +32,7 @@ SmartScores is a LAMP stack application for managing event scoring. It allows ju
 4. Access the application:
    - Admin Panel: http://localhost/smartscores/admin/dashboard.php
    - Judge Portal: http://localhost/smartscores/judges/login.php
-   - Public Scoreboard: http://localhost/smartscores/public/index.php
+   - Public Scoreboard: http://localhost/smartscores/index.php
 
 ## Database Schema
 
@@ -99,20 +99,8 @@ CREATE TABLE scores (
 With more time, the following features could be added:
 
 1. **User Authentication**: Proper login system with password hashing for judges and admins
-2. **Multiple Events**: Support for multiple events with separate scoreboards
-3. **Advanced Scoring**: Support for different scoring criteria and weighting
-4. **Real-time Updates**: WebSockets for instant scoreboard updates without page refresh
-5. **Participant Management**: Admin interface for adding/editing participants
-6. **Export Functionality**: Export results to CSV or PDF
-7. **Audit Log**: Track all scoring changes for accountability
-8. **Responsive Design Improvements**: Better mobile experience
-9. **Customizable Themes**: Allow customization of colors and branding
-10. **API**: RESTful API for integration with other systems
+2. **Real-time Updates**: WebSockets for instant scoreboard updates without page refresh
+3. **Participant Management**: Admin interface for adding/editing participants
+4. **Responsive Design Improvements**: Better mobile experience
+5. **API**: RESTful API for integration with other systems
 
-## Assumptions Made
-
-- For simplicity, no authentication is implemented (as per requirements)
-- Participants are pre-registered in the database
-- Each judge can only assign one score per participant
-- Scores are on a scale of 1-100
-- The scoreboard is sorted by total points in descending order
