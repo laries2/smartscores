@@ -32,7 +32,7 @@ SmartScores is a LAMP stack application for managing event scoring. It allows ju
 4. Access the application:
    - Admin Panel: http://localhost/smartscores/admin/dashboard.php
    - Judge Portal: http://localhost/smartscores/judges/login.php
-   - Public Scoreboard: http://localhost/smartscores/public/index.php
+   - Public Scoreboard: http://localhost/smartscores/index.php
 
 ## Database Schema
 
